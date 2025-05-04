@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Produto</title>
+    <link rel="stylesheet" type="text/css" href="../css/cadastro-produto.css">
+</head>
+<body>
+    <header class="barra">
+        <nav class="links">
+            <a href="../html/cadastro-produto.html">Cadastrar produtos</a>
+            <a href="../php/home.php">Voltar para a Home</a>
+            <a href="../html/cadastro-usuario.html">Cadastre-se</a>
+            <a href="../index.html">Login</a>
+        </nav>   
+    </header>
+    <div class="container-principal">
+        <div class="formulario">
+            <form id="form-cadastro" action="../php/cadastro-produto.php" method="POST">
+                <h3>Cadastro de produtos</h3>
+                <input type="text" name="Produto" placeholder="Nome do produto:" required minlength="2" maxlength="250">
+                <input type="number" name="Preço" placeholder="R$" required>
+                <input type="text" name="Tamanho" placeholder="Tamanho" required>
+                <input type="text" name="Categoria" placeholder="Categoria" required>
+                <input type="text" name="Descrição" placeholder="Descrição:" required minlength="20" maxlength="250">
+                <input type="text" name="Marca" placeholder="Marca do produto:"  maxlength="15">
+                <input type="number" name="Quantidade" placeholder="Quantidade:" required>
+                <input type="text" name="Ativo" placeholder="Produto ativo? true/false">
+                <input type="submit" value="Cadastrar">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
